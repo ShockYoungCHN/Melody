@@ -44,9 +44,9 @@ fi
 
 load_dataset()
 {
-  local w=$1
-  local et=$2
-  local id=$3
+  local w=$1 # graph name
+  local et=$2 # experiment type, L100: local, L0: remote
+  local id=$3 # experiment id
   GRAPH_DATASET=$(tail -n 1 cmd.sh | awk '{print $3}' | awk -F'/' '{print $2}')
   echo "    => Graph dataset: ${GAPBS_GRAPH_DIR}/${GRAPH_DATASET}"
   if [[ ! -e "${GAPBS_GRAPH_DIR}/${GRAPH_DATASET}" ]]; then

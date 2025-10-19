@@ -3,7 +3,6 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 import os
-import pylab
 import pandas as pd
 
 events = ["time", "instructions", "cycles", "CYCLE_ACTIVITY.STALLS_MEM_ANY", \
@@ -108,7 +107,7 @@ def main():
   csv_path = "csv"
   isExist = os.path.exists(csv_path)
   if not isExist:
-    print("error: csv is not exist")
+    print("error: csv does not exist")
     exit()
   filename = os.path.join(csv_path, 'merged.csv')
   df = pd.read_csv(filename, index_col ="workload_id")
