@@ -49,6 +49,11 @@ disable_ht()
   echo off | sudo tee /sys/devices/system/cpu/smt/control >/dev/null 2>&1
 }
 
+enable_ht()
+{
+  echo on | sudo tee /sys/devices/system/cpu/smt/control >/dev/null 2>&1
+}
+
 bring_all_cpus_online()
 {
   echo 1 | sudo tee /sys/devices/system/cpu/cpu*/online >/dev/null 2>&1

@@ -100,7 +100,7 @@ def draw_bars_b(data, x, output_path, filename, loc, xlabel, ylabel, title):
   plt.title(title, fontsize=10)
   plt.legend(loc='upper center', borderpad=0.0, labelspacing=0.1, \
     bbox_to_anchor=(loc[0], loc[1]), prop={'size': 7})
-  plt.savefig(output_path+'/'+filename+'.png', format='png')
+  plt.savefig(output_path+'/'+filename+'.pdf', format='pdf')
   plt.clf()
 
 def main():
