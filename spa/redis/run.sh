@@ -150,10 +150,10 @@ run_seq_cxl_L0() {
 }
 
 main() {
-  ./mod-uncore-freq.sh 2000000 2000000 2000000 2000000
+  $RUNDIR/modify-uncore-freq.sh 2000000 2000000 2000000 2000000
   run_seq_cxl_L100
   run_seq_cxl_L0 1
-  ./mod-uncore-freq.sh 2000000 2000000 500000 500000
+  $RUNDIR/modify-uncore-freq.sh 2000000 2000000 500000 500000
   run_seq_cxl_L0 2
 }
 main
