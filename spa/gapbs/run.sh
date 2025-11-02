@@ -138,10 +138,14 @@ run_seq()
 
 main()
 {
+  # set uncore frequency to 2GHz for node 0 and 500MHz for node 1, now node0 to node1 latency is 190ns
+  $RUNDIR/modify-uncore-freq.sh 2000000 2000000 500000 500000
   echo "Run LOCAL ..."
   run_seq "L100" "100"
   echo "Run REMOTE ..."
   run_seq "L0" "1"
+  # restore uncore frequency
+  $RUNDIR/modify-uncore-freq.sh 1200000 2000000 1200000 2000000
 }
 
 main
