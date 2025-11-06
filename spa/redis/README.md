@@ -14,6 +14,6 @@
 		./pkgdep.sh
 		```
 ## Run
-+ `REDIS_SERVER=10.10.1.1` `REDIS_CLIENT=10.10.1.2`
++ I assume that `REDIS_SERVER=10.10.1.1` `REDIS_CLIENT=10.10.1.2` are running on two different machines in the same LAN.
 + Use `sudo ./run.sh` for running workloads
 + *Note: The default paths (`/mnt/sda4` and `/tdata`) may require to be changed to other names on different machines.*

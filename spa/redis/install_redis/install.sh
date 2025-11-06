@@ -10,10 +10,10 @@ echo "Check redis ..."
 [[ -d redis ]] && rm -rf redis && echo "redis removed"
 
 echo "Install redis ..."
-git clone https://github.com/redis/redis.git > /dev/null 2>&1
+git clone https://github.com/redis/redis.git
 cd redis
 git checkout 6.2
-make
+make -j$(nproc)
 
 cd ${SCRIPT_PATH}
 
