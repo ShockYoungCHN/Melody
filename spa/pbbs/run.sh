@@ -72,9 +72,15 @@ run_one_exp()
   local perfoutput=${output_dir}/${et}-${id}.data
 
   local perf_events="instructions,cycles"
-  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_MEM_ANY,EXE_ACTIVITY.BOUND_ON_STORES"
-  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_L1D_MISS,CYCLE_ACTIVITY.STALLS_L2_MISS,CYCLE_ACTIVITY.STALLS_L3_MISS"
-  perf_events="${perf_events}"",EXE_ACTIVITY.1_PORTS_UTIL,EXE_ACTIVITY.2_PORTS_UTIL,PARTIAL_RAT_STALLS.SCOREBOARD"
+#  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_MEM_ANY,EXE_ACTIVITY.BOUND_ON_STORES"
+#  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_L1D_MISS,CYCLE_ACTIVITY.STALLS_L2_MISS,CYCLE_ACTIVITY.STALLS_L3_MISS"
+#  perf_events="${perf_events}"",EXE_ACTIVITY.1_PORTS_UTIL,EXE_ACTIVITY.2_PORTS_UTIL,PARTIAL_RAT_STALLS.SCOREBOARD"
+#  perf_events="${perf_events}"",MEM_LOAD_RETIRED.L3_MISS"
+  # c, A1, A2, A3, required by Soar obj ranking
+  perf_events="${perf_events}"",CPU_CLK_UNHALTED.THREAD,CYCLE_ACTIVITY.STALLS_L3_MISS"
+  perf_events="${perf_events}"",OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_DATA_RD"
+  perf_events="${perf_events}"",OFFCORE_REQUESTS_OUTSTANDING.DEMAND_DATA_RD"
+  perf_events="${perf_events}"",OFFCORE_REQUESTS.DEMAND_DATA_RD"
   run_cmd="sudo $PERF stat -e ${perf_events} -o $perfoutput  ""${run_cmd}"
 
   {
@@ -116,7 +122,7 @@ run_seq()
 main()
 {  
   # set uncore frequency to 2GHz for node 0 and 500MHz for node 1, now node0 to node1 latency is 190ns
-  $RUNDIR/modify-uncore-freq.sh 2000000 2000000 500000 500000
+  $RUNDIR/modify-uncore-freq.sh 1200000 2000000 1200000 2000000
   echo "Run LOCAL ..."
   run_seq "L100" "100"
   echo "Run REMOTE ..."
