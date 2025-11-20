@@ -3,6 +3,7 @@ RUNDIR=$(echo "$(dirname "$PWD")")
 CPU2017_RUN_DIR="${RUNDIR}/cpu2017"
 RSTDIR="${CPU2017_RUN_DIR}/rst"
 PERF="${RUNDIR}/linux/tools/perf/perf"
+export LD_LIBRARY_PATH="/opt/gcc-6.5.0/lib64:/opt/gcc-6.5.0/lib:${LD_LIBRARY_PATH:-}"
 
 if [[ $# != 1 && $# != 2 ]]; then
   echo ""
@@ -64,10 +65,16 @@ run_one_exp()
   local perfoutput=${output_dir}/${et}-${id}.data
 
   local perf_events="instructions,cycles"
-  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_MEM_ANY,EXE_ACTIVITY.BOUND_ON_STORES"
-  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_L1D_MISS,CYCLE_ACTIVITY.STALLS_L2_MISS,CYCLE_ACTIVITY.STALLS_L3_MISS"
-  perf_events="${perf_events}"",EXE_ACTIVITY.1_PORTS_UTIL,EXE_ACTIVITY.2_PORTS_UTIL,PARTIAL_RAT_STALLS.SCOREBOARD"
-  run_cmd="sudo $PERF stat -e ${perf_events} -o $perfoutput  ""${run_cmd}"
+#  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_MEM_ANY,EXE_ACTIVITY.BOUND_ON_STORES"
+#  perf_events="${perf_events}"",CYCLE_ACTIVITY.STALLS_L1D_MISS,CYCLE_ACTIVITY.STALLS_L2_MISS,CYCLE_ACTIVITY.STALLS_L3_MISS"
+#  perf_events="${perf_events}"",EXE_ACTIVITY.1_PORTS_UTIL,EXE_ACTIVITY.2_PORTS_UTIL,PARTIAL_RAT_STALLS.SCOREBOARD"
+#  perf_events="${perf_events}"",MEM_LOAD_RETIRED.L3_MISS"
+  # c, A1, A2, A3, required by Soar obj ranking
+  perf_events="${perf_events}"",CPU_CLK_UNHALTED.THREAD,CYCLE_ACTIVITY.STALLS_L3_MISS"
+  perf_events="${perf_events}"",OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_DATA_RD"
+  perf_events="${perf_events}"",OFFCORE_REQUESTS_OUTSTANDING.DEMAND_DATA_RD"
+  perf_events="${perf_events}"",OFFCORE_REQUESTS.DEMAND_DATA_RD"
+  run_cmd="sudo env LD_LIBRARY_PATH=\"$LD_LIBRARY_PATH\" $PERF stat -e ${perf_events} -o $perfoutput  ""${run_cmd}"
 
   {
     echo "$run_cmd" | tee r.sh
@@ -107,10 +114,12 @@ run_seq()
 
 main()
 {
+  $RUNDIR/modify-uncore-freq.sh 1200000 2000000 1200000 2000000
   echo "Run LOCAL ..."
   run_seq "L100" "100"
   echo "Run REMOTE ..."
   run_seq "L0" "1"
+  $RUNDIR/modify-uncore-freq.sh 1200000 2000000 1200000 2000000
 }
 
 main
