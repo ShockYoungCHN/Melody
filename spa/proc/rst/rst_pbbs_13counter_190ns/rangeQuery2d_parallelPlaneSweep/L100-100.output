@@ -1,0 +1,8 @@
+../geometryData/data 2DinCube_10M
+../geometryData/data/2DinCube_10M
+2DinCube_10M :  -r 3 : '6.759', '6.367', '6.355', geomean = 6.491
+../geometryData/data 2Dkuzmin_10M
+../geometryData/data/2Dkuzmin_10M
+2Dkuzmin_10M :  -r 3 : '6.785', '6.46', '6.465', geomean = 6.568
+parallelPlaneSweep : 8 : geomean of mins = 6.407, geomean of geomeans = 6.529
+/users/samuraiy/Melody/spa/pbbs/rangeQuery2d_parallelPlaneSweep

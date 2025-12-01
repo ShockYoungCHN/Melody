@@ -1,0 +1,17 @@
+../sequenceData/data randomSeq_100M_256_int
+../sequenceData/data/randomSeq_100M_256_int
+randomSeq_100M_256_int : -b 256 -r 3 : '0.016', '0.016', '0.016', geomean = 0.016
+../sequenceData/data randomSeq_100M_100K_int
+../sequenceData/data/randomSeq_100M_100K_int
+randomSeq_100M_100K_int : -b 100000 -r 3 : '0.126', '0.126', '0.125', geomean = 0.125
+../sequenceData/data randomSeq_100M_int
+../sequenceData/data/randomSeq_100M_int
+randomSeq_100M_int : -b 100000000 -r 3 : '0.25', '0.25', '0.25', geomean = 0.25
+../sequenceData/data exptSeq_100M_int
+../sequenceData/data/exptSeq_100M_int
+exptSeq_100M_int : -b 100000000 -r 3 : '0.311', '0.31', '0.31', geomean = 0.31
+../sequenceData/data almostEqualSeq_100000000
+../sequenceData/data/almostEqualSeq_100000000
+almostEqualSeq_100000000 : -b 100000000 -r 3 : '0.492', '0.492', '0.492', geomean = 0.492
+parallel : 8 : geomean of mins = 0.151, geomean of geomeans = 0.152
+/users/samuraiy/Melody/spa/pbbs/histogram_parallel

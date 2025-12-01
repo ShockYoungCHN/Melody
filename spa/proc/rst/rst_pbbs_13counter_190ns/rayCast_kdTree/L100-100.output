@@ -1,0 +1,11 @@
+../geometryData/data happyTriangles happyRays
+../geometryData/data/happyTriangles ../geometryData/data/happyRays
+happyTriangles happyRays :  -r 3 : '1.678', '1.658', '1.639', geomean = 1.658
+../geometryData/data angelTriangles angelRays
+../geometryData/data/angelTriangles ../geometryData/data/angelRays
+angelTriangles angelRays :  -r 3 : '0.507', '0.507', '0.51', geomean = 0.508
+../geometryData/data dragonTriangles dragonRays
+../geometryData/data/dragonTriangles ../geometryData/data/dragonRays
+dragonTriangles dragonRays :  -r 3 : '1.087', '1.084', '1.084', geomean = 1.085
+kdTree : 8 : geomean of mins = 0.966, geomean of geomeans = 0.97
+/users/samuraiy/Melody/spa/pbbs/rayCast_kdTree

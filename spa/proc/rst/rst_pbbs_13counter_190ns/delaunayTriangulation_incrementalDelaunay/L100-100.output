@@ -1,0 +1,8 @@
+../geometryData/data 2DinCube_10M
+../geometryData/data/2DinCube_10M
+2DinCube_10M :  -r 3 : '7.216', '7.248', '7.229', geomean = 7.231
+../geometryData/data 2Dkuzmin_10M
+../geometryData/data/2Dkuzmin_10M
+2Dkuzmin_10M :  -r 3 : '7.832', '7.847', '7.844', geomean = 7.841
+incrementalDelaunay : 8 : geomean of mins = 7.518, geomean of geomeans = 7.53
+/users/samuraiy/Melody/spa/pbbs/delaunayTriangulation_incrementalDelaunay

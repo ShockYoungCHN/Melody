@@ -1,0 +1,11 @@
+../graphData/data randLocalGraph_WE_10_20000000
+../graphData/data/randLocalGraph_WE_10_20000000
+randLocalGraph_WE_10_20000000 :  -r 1 : '29.062', geomean = 29.062
+../graphData/data rMatGraph_WE_12_16000000
+../graphData/data/rMatGraph_WE_12_16000000
+rMatGraph_WE_12_16000000 :  -r 1 : '23.956', geomean = 23.956
+../graphData/data 2Dgrid_WE_64000000
+../graphData/data/2Dgrid_WE_64000000
+2Dgrid_WE_64000000 :  -r 1 : '38.998', geomean = 38.998
+serialMST : 1 : geomean of mins = 30.056, geomean of geomeans = 30.056
+/users/samuraiy/Melody/spa/pbbs/minSpanningForest_serialMST

@@ -1,0 +1,11 @@
+../graphData/data randLocalGraph_E_10_20000000
+../graphData/data/randLocalGraph_E_10_20000000
+randLocalGraph_E_10_20000000 :  -r 3 : '2.409', '2.393', '2.392', geomean = 2.398
+../graphData/data rMatGraph_E_10_20000000
+../graphData/data/rMatGraph_E_10_20000000
+rMatGraph_E_10_20000000 :  -r 3 : '3.317', '3.313', '3.306', geomean = 3.312
+../graphData/data 2Dgrid_E_64000000
+../graphData/data/2Dgrid_E_64000000
+2Dgrid_E_64000000 :  -r 3 : '3.708', '3.703', '3.703', geomean = 3.705
+incrementalMatching : 8 : geomean of mins = 3.082, geomean of geomeans = 3.087
+/users/samuraiy/Melody/spa/pbbs/maximalMatching_incrementalMatching

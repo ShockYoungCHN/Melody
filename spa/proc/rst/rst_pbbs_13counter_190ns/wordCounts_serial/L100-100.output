@@ -1,0 +1,11 @@
+../sequenceData/data trigramString_250000000
+../sequenceData/data/trigramString_250000000
+trigramString_250000000 :  -r 1 : '9.446', geomean = 9.446
+../sequenceData/data etext99
+../sequenceData/data/etext99
+etext99 :  -r 1 : '2.474', geomean = 2.474
+../sequenceData/data wikipedia250M.txt
+../sequenceData/data/wikipedia250M.txt
+wikipedia250M.txt :  -r 1 : '5.852', geomean = 5.852
+serial : 1 : geomean of mins = 5.152, geomean of geomeans = 5.152
+/users/samuraiy/Melody/spa/pbbs/wordCounts_serial

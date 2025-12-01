@@ -1,0 +1,8 @@
+../sequenceData/data covtype.data
+../sequenceData/data/covtype.data
+covtype.data :  -r 3 -o /tmp/ofile455232_29063 : '1.649', '1.62', '1.611', geomean = 1.626
+../sequenceData/data kddcup.data
+../sequenceData/data/kddcup.data
+kddcup.data :  -r 3 -o /tmp/ofile401146_490247 : '2.049', '2.045', '2.055', geomean = 2.05
+decisionTree : 8 : geomean of mins = 1.815, geomean of geomeans = 1.826
+/users/samuraiy/Melody/spa/pbbs/classify_decisionTree

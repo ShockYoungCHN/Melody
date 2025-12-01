@@ -1,0 +1,17 @@
+../sequenceData/data randomSeq_100M_double
+../sequenceData/data/randomSeq_100M_double
+randomSeq_100M_double :  -r 3 : '1.401', '1.402', '1.403', geomean = 1.402
+../sequenceData/data exptSeq_100M_double
+../sequenceData/data/exptSeq_100M_double
+exptSeq_100M_double :  -r 3 : '1.053', '1.053', '1.054', geomean = 1.053
+../sequenceData/data almostSortedSeq_100M_double
+../sequenceData/data/almostSortedSeq_100M_double
+almostSortedSeq_100M_double :  -r 3 : '0.85', '0.851', '0.85', geomean = 0.85
+../sequenceData/data randomSeq_100M_double_pair_double
+../sequenceData/data/randomSeq_100M_double_pair_double
+randomSeq_100M_double_pair_double :  -r 3 : '1.818', '1.82', '1.82', geomean = 1.819
+../sequenceData/data trigramSeq_100M
+../sequenceData/data/trigramSeq_100M
+trigramSeq_100M :  -r 3 : '3.691', '3.695', '3.696', geomean = 3.694
+sampleSort : 8 : geomean of mins = 1.531, geomean of geomeans = 1.532
+/users/samuraiy/Melody/spa/pbbs/comparisonSort_sampleSort

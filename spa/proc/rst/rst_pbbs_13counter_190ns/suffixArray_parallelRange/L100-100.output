@@ -1,0 +1,14 @@
+../sequenceData/data trigramString_100000000
+../sequenceData/data/trigramString_100000000
+trigramString_100000000 :  -r 3 : '4.525', '4.526', '4.523', geomean = 4.525
+../sequenceData/data chr22.dna
+../sequenceData/data/chr22.dna
+chr22.dna :  -r 3 : '1.953', '1.956', '1.955', geomean = 1.955
+../sequenceData/data etext99
+../sequenceData/data/etext99
+etext99 :  -r 3 : '7.83', '7.824', '7.819', geomean = 7.824
+../sequenceData/data wikisamp.xml
+../sequenceData/data/wikisamp.xml
+wikisamp.xml :  -r 3 : '6.846', '6.84', '6.83', geomean = 6.838
+parallelRange : 8 : geomean of mins = 4.66, geomean of geomeans = 4.664
+/users/samuraiy/Melody/spa/pbbs/suffixArray_parallelRange

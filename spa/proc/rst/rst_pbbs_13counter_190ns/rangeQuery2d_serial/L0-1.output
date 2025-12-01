@@ -1,0 +1,8 @@
+../geometryData/data 2DinCube_10M
+../geometryData/data/2DinCube_10M
+2DinCube_10M :  -r 1 : '88.872', geomean = 88.872
+../geometryData/data 2Dkuzmin_10M
+../geometryData/data/2Dkuzmin_10M
+2Dkuzmin_10M :  -r 1 : '88.986', geomean = 88.986
+serial : 1 : geomean of mins = 88.929, geomean of geomeans = 88.929
+/users/samuraiy/Melody/spa/pbbs/rangeQuery2d_serial

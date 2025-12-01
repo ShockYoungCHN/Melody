@@ -1,0 +1,11 @@
+../sequenceData/data randomSeq_100M_int
+../sequenceData/data/randomSeq_100M_int
+randomSeq_100M_int :  -r 3 : '0.66', '0.661', '0.659', geomean = 0.66
+../sequenceData/data exptSeq_100M_int
+../sequenceData/data/exptSeq_100M_int
+exptSeq_100M_int :  -r 3 : '0.502', '0.503', '0.501', geomean = 0.502
+../sequenceData/data trigramSeq_100M
+../sequenceData/data/trigramSeq_100M
+trigramSeq_100M :  -r 3 : '1.535', '1.534', '1.536', geomean = 1.535
+parlayhash : 8 : geomean of mins = 0.797, geomean of geomeans = 0.798
+/users/samuraiy/Melody/spa/pbbs/removeDuplicates_parlayhash

@@ -1,0 +1,11 @@
+../sequenceData/data chr22.dna
+../sequenceData/data/chr22.dna
+chr22.dna :  -r 3 : '2.607', '2.603', '2.605', geomean = 2.605
+../sequenceData/data etext99
+../sequenceData/data/etext99
+etext99 :  -r 3 : '10.712', '10.698', '10.695', geomean = 10.702
+../sequenceData/data wikisamp.xml
+../sequenceData/data/wikisamp.xml
+wikisamp.xml :  -r 3 : '9.391', '9.399', '9.407', geomean = 9.399
+doubling : 8 : geomean of mins = 6.394, geomean of geomeans = 6.399
+/users/samuraiy/Melody/spa/pbbs/longestRepeatedSubstring_doubling

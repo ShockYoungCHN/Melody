@@ -1,0 +1,14 @@
+../sequenceData/data randomSeq_100M_int
+../sequenceData/data/randomSeq_100M_int
+randomSeq_100M_int : -b 27 -r 1 : '2.301', geomean = 2.301
+../sequenceData/data exptSeq_100M_int
+../sequenceData/data/exptSeq_100M_int
+exptSeq_100M_int : -b 27 -r 1 : '2.364', geomean = 2.364
+../sequenceData/data randomSeq_100M_int_pair_int
+../sequenceData/data/randomSeq_100M_int_pair_int
+randomSeq_100M_int_pair_int : -b 27 -r 1 : '2.94', geomean = 2.94
+../sequenceData/data randomSeq_100M_256_int_pair_int
+../sequenceData/data/randomSeq_100M_256_int_pair_int
+randomSeq_100M_256_int_pair_int : -b 8 -r 1 : '0.892', geomean = 0.892
+serialRadixSort : 1 : geomean of mins = 1.944, geomean of geomeans = 1.944
+/users/samuraiy/Melody/spa/pbbs/integerSort_serialRadixSort

@@ -1,0 +1,11 @@
+../graphData/data randLocalGraph_WE_10_20000000
+../graphData/data/randLocalGraph_WE_10_20000000
+randLocalGraph_WE_10_20000000 :  -r 3 : '5.285', '5.287', '5.286', geomean = 5.286
+../graphData/data rMatGraph_WE_12_16000000
+../graphData/data/rMatGraph_WE_12_16000000
+rMatGraph_WE_12_16000000 :  -r 3 : '3.794', '3.793', '3.797', geomean = 3.795
+../graphData/data 2Dgrid_WE_64000000
+../graphData/data/2Dgrid_WE_64000000
+2Dgrid_WE_64000000 :  -r 3 : '8.254', '8.268', '8.292', geomean = 8.272
+parallelFilterKruskal : 8 : geomean of mins = 5.49, geomean of geomeans = 5.495
+/users/samuraiy/Melody/spa/pbbs/minSpanningForest_parallelFilterKruskal

@@ -1,0 +1,11 @@
+../graphData/data randLocalGraph_E_10_20000000
+../graphData/data/randLocalGraph_E_10_20000000
+randLocalGraph_E_10_20000000 :  -r 3 : '1.452', '1.479', '1.454', geomean = 1.462
+../graphData/data rMatGraph_E_12_16000000
+../graphData/data/rMatGraph_E_12_16000000
+rMatGraph_E_12_16000000 :  -r 3 : '1.177', '1.19', '1.166', geomean = 1.178
+../graphData/data 2Dgrid_E_64000000
+../graphData/data/2Dgrid_E_64000000
+2Dgrid_E_64000000 :  -r 3 : '2.492', '2.586', '2.485', geomean = 2.52
+ndST : 8 : geomean of mins = 1.614, geomean of geomeans = 1.631
+/users/samuraiy/Melody/spa/pbbs/spanningForest_ndST

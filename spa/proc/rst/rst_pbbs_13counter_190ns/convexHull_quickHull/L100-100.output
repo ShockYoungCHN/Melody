@@ -1,0 +1,11 @@
+../geometryData/data 2DinSphere_100000000
+../geometryData/data/2DinSphere_100000000
+2DinSphere_100000000 :  -r 3 : '0.804', '0.805', '0.804', geomean = 0.804
+../geometryData/data 2Dkuzmin_100000000
+../geometryData/data/2Dkuzmin_100000000
+2Dkuzmin_100000000 :  -r 3 : '0.305', '0.305', '0.305', geomean = 0.305
+../geometryData/data 2DonSphere_100000000
+../geometryData/data/2DonSphere_100000000
+2DonSphere_100000000 :  -r 3 : '13.958', '13.72', '13.681', geomean = 13.786
+quickHull : 8 : geomean of mins = 1.497, geomean of geomeans = 1.502
+/users/samuraiy/Melody/spa/pbbs/convexHull_quickHull

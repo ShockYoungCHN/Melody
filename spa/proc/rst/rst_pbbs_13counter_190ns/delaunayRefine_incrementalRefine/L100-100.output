@@ -1,0 +1,8 @@
+../geometryData/data 2DinCubeDelaunay_5000000
+../geometryData/data/2DinCubeDelaunay_5000000
+2DinCubeDelaunay_5000000 :  -r 3 : '9.411', '9.375', '9.379', geomean = 9.388
+../geometryData/data 2DkuzminDelaunay_5000000
+../geometryData/data/2DkuzminDelaunay_5000000
+2DkuzminDelaunay_5000000 :  -r 3 : '9.273', '9.246', '9.265', geomean = 9.261
+incrementalRefine : 8 : geomean of mins = 9.31, geomean of geomeans = 9.324
+/users/samuraiy/Melody/spa/pbbs/delaunayRefine_incrementalRefine

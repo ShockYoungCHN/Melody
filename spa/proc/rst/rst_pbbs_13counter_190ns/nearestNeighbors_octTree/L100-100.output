@@ -1,0 +1,20 @@
+../geometryData/data 2DinCube_10M
+../geometryData/data/2DinCube_10M
+2DinCube_10M : -d 2 -k 1 -r 3 : '1.023', '1.022', '1.024', geomean = 1.023
+../geometryData/data 2Dkuzmin_10M
+../geometryData/data/2Dkuzmin_10M
+2Dkuzmin_10M : -d 2 -k 1 -r 3 : '1.113', '1.112', '1.113', geomean = 1.113
+../geometryData/data 3DinCube_10M
+../geometryData/data/3DinCube_10M
+3DinCube_10M : -d 3 -k 1 -r 3 : '1.78', '1.775', '1.778', geomean = 1.778
+../geometryData/data 3DonSphere_10M
+../geometryData/data/3DonSphere_10M
+3DonSphere_10M : -d 3 -k 1 -r 3 : '1.252', '1.246', '1.251', geomean = 1.25
+../geometryData/data 3DinCube_10M
+../geometryData/data/3DinCube_10M
+3DinCube_10M : -d 3 -k 10 -r 3 : '5.483', '5.477', '5.482', geomean = 5.48
+../geometryData/data 3Dplummer_10M
+../geometryData/data/3Dplummer_10M
+3Dplummer_10M : -d 3 -k 10 -r 3 : '7.429', '7.466', '7.435', geomean = 7.443
+octTree : 8 : geomean of mins = 2.163, geomean of geomeans = 2.166
+/users/samuraiy/Melody/spa/pbbs/nearestNeighbors_octTree

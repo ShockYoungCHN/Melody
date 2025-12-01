@@ -1,0 +1,11 @@
+../graphData/data randLocalGraph_JR_10_20000000
+../graphData/data/randLocalGraph_JR_10_20000000
+randLocalGraph_JR_10_20000000 :  -r 1 : '3.366', geomean = 3.366
+../graphData/data rMatGraph_JR_12_16000000
+../graphData/data/rMatGraph_JR_12_16000000
+rMatGraph_JR_12_16000000 :  -r 1 : '2.091', geomean = 2.091
+../graphData/data 3Dgrid_JR_64000000
+../graphData/data/3Dgrid_JR_64000000
+3Dgrid_JR_64000000 :  -r 1 : '10.854', geomean = 10.854
+serialMIS : 1 : geomean of mins = 4.244, geomean of geomeans = 4.244
+/users/samuraiy/Melody/spa/pbbs/maximalIndependentSet_serialMIS

@@ -1,0 +1,11 @@
+../graphData/data randLocalGraph_J_10_20000000
+../graphData/data/randLocalGraph_J_10_20000000
+randLocalGraph_J_10_20000000 :  -r 3 : '0.657', '0.66', '0.664', geomean = 0.661
+../graphData/data rMatGraph_J_12_16000000
+../graphData/data/rMatGraph_J_12_16000000
+rMatGraph_J_12_16000000 :  -r 3 : '0.708', '0.707', '0.703', geomean = 0.706
+../graphData/data 3Dgrid_J_64000000
+../graphData/data/3Dgrid_J_64000000
+3Dgrid_J_64000000 :  -r 3 : '5.566', '5.595', '5.567', geomean = 5.576
+backForwardBFS : 8 : geomean of mins = 1.37, geomean of geomeans = 1.375
+/users/samuraiy/Melody/spa/pbbs/breadthFirstSearch_backForwardBFS

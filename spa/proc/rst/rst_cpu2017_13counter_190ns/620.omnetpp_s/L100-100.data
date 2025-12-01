@@ -1,0 +1,28 @@
+# started on Tue Nov 11 20:48:06 2025
+
+
+ Performance counter stats for 'numactl --cpunodebind 0 --membind 0 -- bash cmd.sh':
+
+ 1,061,931,964,440      instructions                     #    0.80  insn per cycle              (37.49%)
+ 1,322,740,693,195      cycles                                                                  (37.49%)
+   641,698,315,551      CYCLE_ACTIVITY.STALLS_MEM_ANY                                           (37.49%)
+    22,296,964,075      EXE_ACTIVITY.BOUND_ON_STORES                                            (37.49%)
+   579,499,227,442      CYCLE_ACTIVITY.STALLS_L1D_MISS                                          (37.49%)
+   545,143,450,409      CYCLE_ACTIVITY.STALLS_L2_MISS                                           (37.50%)
+   430,379,687,392      CYCLE_ACTIVITY.STALLS_L3_MISS                                           (25.01%)
+   155,956,892,645      EXE_ACTIVITY.1_PORTS_UTIL                                               (25.01%)
+   155,626,368,668      EXE_ACTIVITY.2_PORTS_UTIL                                               (25.01%)
+     5,421,980,264      PARTIAL_RAT_STALLS.SCOREBOARD                                           (25.01%)
+     4,444,529,312      MEM_LOAD_RETIRED.L3_MISS                                                (25.01%)
+ 1,323,280,445,259      CPU_CLK_UNHALTED.THREAD                                                 (31.26%)
+   429,997,811,804      CYCLE_ACTIVITY.STALLS_L3_MISS                                           (31.25%)
+   785,058,506,501      OFFCORE_REQUESTS_OUTSTANDING.CYCLES_WITH_DEMAND_DATA_RD                                        (31.25%)
+ 1,383,499,897,783      OFFCORE_REQUESTS_OUTSTANDING.DEMAND_DATA_RD                                        (31.25%)
+    13,012,752,894      OFFCORE_REQUESTS.DEMAND_DATA_RD                                         (31.25%)
+
+     606.925239257 seconds time elapsed
+
+     606.467933000 seconds user
+       0.327003000 seconds sys
+
+

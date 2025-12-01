@@ -1,0 +1,11 @@
+../sequenceData/data randomSeq_100M_int
+../sequenceData/data/randomSeq_100M_int
+randomSeq_100M_int :  -r 1 : '31.547', geomean = 31.547
+../sequenceData/data exptSeq_100M_int
+../sequenceData/data/exptSeq_100M_int
+exptSeq_100M_int :  -r 1 : '16.026', geomean = 16.026
+../sequenceData/data trigramSeq_100M
+../sequenceData/data/trigramSeq_100M
+trigramSeq_100M :  -r 1 : '17.534', geomean = 17.534
+serial_hash : 1 : geomean of mins = 20.696, geomean of geomeans = 20.696
+/users/samuraiy/Melody/spa/pbbs/removeDuplicates_serial_hash

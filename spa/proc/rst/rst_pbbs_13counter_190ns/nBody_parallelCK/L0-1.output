@@ -1,0 +1,11 @@
+../geometryData/data 3DonSphere_1000000
+../geometryData/data/3DonSphere_1000000
+3DonSphere_1000000 :  -r 3 -o /tmp/ofile17514_299109 : '4.925', '4.9', '4.879', geomean = 4.901
+../geometryData/data 3DinCube_1000000
+../geometryData/data/3DinCube_1000000
+3DinCube_1000000 :  -r 3 -o /tmp/ofile379083_849315 : '11.161', '11.143', '11.134', geomean = 11.146
+../geometryData/data 3Dplummer_1000000
+../geometryData/data/3Dplummer_1000000
+3Dplummer_1000000 :  -r 3 -o /tmp/ofile247902_77930 : '16.433', '16.417', '16.408', geomean = 16.419
+parallelCK : 8 : geomean of mins = 9.624, geomean of geomeans = 9.644
+/users/samuraiy/Melody/spa/pbbs/nBody_parallelCK

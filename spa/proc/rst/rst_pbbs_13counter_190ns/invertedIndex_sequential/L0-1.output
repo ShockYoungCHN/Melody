@@ -1,0 +1,8 @@
+../sequenceData/data wikisamp.xml
+../sequenceData/data/wikisamp.xml
+wikisamp.xml :  -r 1 : '2.411', geomean = 2.411
+../sequenceData/data wikipedia250M.txt
+../sequenceData/data/wikipedia250M.txt
+wikipedia250M.txt :  -r 1 : '11.736', geomean = 11.736
+sequential : 1 : geomean of mins = 5.32, geomean of geomeans = 5.32
+/users/samuraiy/Melody/spa/pbbs/invertedIndex_sequential
